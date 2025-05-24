@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Tinggi Bangunan</title>
+    <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <div class="container">
+        <h1>Kalkulator Tinggi Bangunan</h1>
+        <p>Hitung tinggi bangunan menggunakan prinsip trigonometri.</p>
+
+        <div class="form-group">
+            <label for="klinometerHeight">Tinggi Klinometer dari Dataran (cm):</label>
+            <input type="number" id="klinometerHeight" value="0">
+        </div>
+
+        <div class="form-group">
+            <label for="elevationAngle">Sudut Elevasi (derajat):</label>
+            <input type="number" id="elevationAngle" value="0">
+        </div>
+
+        <div class="form-group">
+            <label for="distanceToObject">Jarak Klinometer ke Objek (cm):</label>
+            <input type="number" id="distanceToObject" value="0">
+        </div>
+
+        <button id="calculateBtn">Hitung Tinggi Bangunan</button>
+
+        <div id="resultContainer" class="result-container hidden">
+            <p>Tinggi Bangunan:</p>
+            <p id="buildingHeightResult" class="result-value">0 m</p>
+        </div>
+
+        <div id="errorMessage" class="error-message hidden" role="alert">
+            <p class="error-title">Kesalahan Input!</p>
+            <p id="errorText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
